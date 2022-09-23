@@ -1,0 +1,51 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 100%;
+  }
+  body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+  
+  .hero { 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('img/art-01-01.jpg');
+    background-size: cover;
+  }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(0,0,0,0.25);
+      background-color: #fc6b2248;
+    }
+  
+  
+  a {
+    position: relative;
+    color: #ffffff;  
+    font-size: 24pt;
+    line-height: 0.9;
+    text-align:center;
+    text-decoration: none;
+    background-color: #441e1e;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  a:hover{
+      font-size: 30pt;
+  }
+  
